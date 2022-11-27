@@ -14,8 +14,8 @@
   "bugs": "https://github.com/skarab42/eslint-plugin-expect-extensions/issues",
   "funding": "https://github.com/sponsors/skarab42",
   "license": "MIT",
-  "type": "module",
-  "exports": "./plugin/index.js",
+  "type": "commonjs",
+  "main": "./plugin/index.js",
   "types": "./plugin/index.d.ts",
   "private": true,
   "publishConfig": {

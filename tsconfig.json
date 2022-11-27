@@ -3,7 +3,7 @@
   "exclude": ["./plugin", "./coverage"],
   "compilerOptions": {
     "noEmit": true,
-    "module": "es2022",
+    "module": "commonjs",
     "target": "es2017"
   }
 }
