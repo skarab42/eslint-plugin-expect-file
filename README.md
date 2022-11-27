@@ -1,11 +1,11 @@
-# eslint-plugin-expect-extensions
+# eslint-plugin-expect-file
 
-Enforce the use of specific file extensions.
+Enforce the use of specific file name, extension, type, ...
 
 ## Installation
 
 ```bash
-pnpm add -D eslint eslint-plugin-expect-extensions
+pnpm add -D eslint eslint-plugin-expect-file
 ```
 
 ## Usage

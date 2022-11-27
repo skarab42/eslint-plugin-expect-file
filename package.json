@@ -1,17 +1,17 @@
 {
-  "name": "eslint-plugin-expect-extensions",
+  "name": "eslint-plugin-expect-file",
   "version": "0.0.0-development",
-  "description": "Enforce the use of specific file extensions.",
+  "description": "Enforce the use of specific file name, extension, type, ...",
   "author": {
     "name": "skarab42",
     "email": "skarab@bluewin.ch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/skarab42/eslint-plugin-expect-extensions.git"
+    "url": "https://github.com/skarab42/eslint-plugin-expect-file.git"
   },
-  "homepage": "https://github.com/skarab42/eslint-plugin-expect-extensions",
-  "bugs": "https://github.com/skarab42/eslint-plugin-expect-extensions/issues",
+  "homepage": "https://github.com/skarab42/eslint-plugin-expect-file",
+  "bugs": "https://github.com/skarab42/eslint-plugin-expect-file/issues",
   "funding": "https://github.com/sponsors/skarab42",
   "license": "MIT",
   "type": "commonjs",
@@ -42,6 +42,7 @@
     "@types/node": "^18.11.9",
     "@vitest/coverage-c8": "^0.25.3",
     "eslint": "^8.28.0",
+    "eslint-plugin-expect-file": "file:./plugin",
     "lint-staged": "^13.0.4",
     "prettier": "^2.8.0",
     "semantic-release": "^19.0.5",
