@@ -4,9 +4,11 @@ specifiers:
   '@skarab/eslint-config': ^3.0.0
   '@skarab/prettier-config': ^1.2.2
   '@skarab/typescript-config': ^2.0.0
+  '@types/eslint': ^8.4.10
   '@types/node': ^18.11.9
   '@vitest/coverage-c8': ^0.25.3
   eslint: ^8.28.0
+  eslint-plugin-expect-extensions: file:.
   lint-staged: ^13.0.4
   prettier: ^2.8.0
   semantic-release: ^19.0.5
@@ -19,9 +21,11 @@ devDependencies:
   '@skarab/eslint-config': 3.0.0_hsf322ms6xhhd4b5ne6lb74y4a
   '@skarab/prettier-config': 1.2.2_prettier@2.8.0
   '@skarab/typescript-config': 2.0.0
+  '@types/eslint': 8.4.10
   '@types/node': 18.11.9
   '@vitest/coverage-c8': 0.25.3
   eslint: 8.28.0
+  eslint-plugin-expect-extensions: 'file:'
   lint-staged: 13.0.4
   prettier: 2.8.0
   semantic-release: 19.0.5
@@ -444,6 +448,17 @@ packages:
 
   /@types/chai/4.3.4:
     resolution: {integrity: sha512-KnRanxnpfpjUTqTCXslZSEdLfXExwgNxYPdiO2WGUj8+HDjFi8R3k5RVKPeSCzLjCcshCAtVO2QBbVuAV4kTnw==}
+    dev: true
+
+  /@types/eslint/8.4.10:
+    resolution: {integrity: sha512-Sl/HOqN8NKPmhWo2VBEPm0nvHnu2LL3v9vKo8MEq0EtbJ4eVzGPl41VNPvn5E1i5poMk4/XD8UriLHpJvEP/Nw==}
+    dependencies:
+      '@types/estree': 1.0.0
+      '@types/json-schema': 7.0.11
+    dev: true
+
+  /@types/estree/1.0.0:
+    resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
     dev: true
 
   /@types/istanbul-lib-coverage/2.0.4:
@@ -4421,4 +4436,11 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  'file:':
+    resolution: {directory: '', type: directory}
+    name: eslint-plugin-expect-extensions
+    version: 0.0.0-development
+    engines: {node: '>=16', pnpm: '>=7'}
     dev: true

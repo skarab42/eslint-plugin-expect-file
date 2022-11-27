@@ -1,4 +1,9 @@
 {
   "root": true,
-  "extends": ["@skarab/eslint-config"]
+  "extends": ["@skarab/eslint-config"],
+  "plugins": ["eslint-plugin-expect-extensions"],
+  "rules": {
+    "unicorn/prefer-module": "off",
+    "expect-extensions/expect-extensions": ["warn", { "source/rules": ".js" }]
+  }
 }
