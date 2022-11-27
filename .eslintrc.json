@@ -10,13 +10,6 @@
         "./source/**": [".ts"],
         "./test/**": [".test.ts"]
       }
-    ],
-    "expect-file/path-to-match-pattern": [
-      "warn",
-      {
-        "./source/**": ["**/*.ts"],
-        "./test/**": ["**/*.test.ts"]
-      }
     ]
   }
 }
