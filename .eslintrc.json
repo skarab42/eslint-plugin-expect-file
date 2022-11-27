@@ -4,6 +4,12 @@
   "plugins": ["expect-file"],
   "rules": {
     "unicorn/prefer-module": "off",
-    "expect-extensions/expect-extensions": ["warn", { "source/rules": ".js" }]
+    "expect-file/name-to-match-extension": [
+      "warn",
+      {
+        "./source/**": [".ts"],
+        "./test/**": [".test.ts"]
+      }
+    ]
   }
 }

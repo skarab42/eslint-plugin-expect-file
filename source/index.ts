@@ -1,7 +1,11 @@
 import type { ESLint } from 'eslint';
 
-import * as expectExtensions from './rules/expect-extensions.js';
+import * as nameToMatchExtension from './rules/name-to-match-extension.js';
 
-const plugin: ESLint.Plugin = { rules: { 'expect-extensions': expectExtensions } };
+const plugin: ESLint.Plugin = {
+  rules: {
+    'name-to-match-extension': nameToMatchExtension,
+  },
+};
 
 export = plugin;
