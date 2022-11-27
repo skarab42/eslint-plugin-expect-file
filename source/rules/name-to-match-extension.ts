@@ -15,6 +15,17 @@ const meta: Rule.RuleModule['meta'] = {
     expectedExtension: "Expected file extension to be '{{extension}}'.",
     expectedExtensions: 'Expected file extension to be one of {{extensions}}.',
   },
+  schema: [
+    {
+      type: 'object',
+      patternProperties: {
+        '': {
+          anyOf: [{ type: 'string' }, { type: 'array', items: { type: 'string' } }],
+        },
+      },
+      additionalProperties: false,
+    },
+  ],
 };
 
 type Patterns = Record<string, string | string[]>;
