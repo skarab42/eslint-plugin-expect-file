@@ -17,9 +17,9 @@
   "type": "commonjs",
   "main": "./plugin/index.js",
   "types": "./plugin/index.d.ts",
-  "private": true,
+  "private": false,
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "files": [
     "plugin"
