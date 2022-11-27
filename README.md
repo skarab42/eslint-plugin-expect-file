@@ -10,7 +10,29 @@ pnpm add -D eslint eslint-plugin-expect-file
 
 ## Usage
 
-...
+Add it to your `.eslintrc.js`:
+
+```js
+module.exports = {
+  plugins: ['expect-file'],
+  rules: {
+    'expect-file/name-to-match-extension': [
+      'warn',
+      {
+        './source/**': ['.ts'],
+        './test/**': ['.test.ts'],
+      },
+    ],
+    'expect-file/path-to-match-pattern': [
+      'warn',
+      {
+        './source/**': ['**/*.ts'],
+        './test/**': ['**/*.test.ts'],
+      },
+    ],
+  },
+};
+```
 
 ---
 
