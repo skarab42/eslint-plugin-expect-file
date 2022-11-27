@@ -15,18 +15,22 @@ const meta: Rule.RuleModule['meta'] = {
     expectedToMatchPattern: "Expected file path to match '{{pattern}}' pattern.",
     expectedToMatchPatterns: "Expected file path to match one of '{{patterns}}' patterns.",
   },
-  schema: [
-    {
+  schema: {
+    type: 'array',
+    minItems: 1,
+    items: {
       type: 'object',
-      minProperties: 1,
       patternProperties: {
         '': {
-          anyOf: [{ type: 'string' }, { type: 'array', items: { type: 'string' } }],
+          anyOf: [
+            { type: 'string', minLength: 1 },
+            { type: 'array', items: { type: 'string' }, minItems: 1 },
+          ],
         },
       },
       additionalProperties: false,
     },
-  ],
+  },
 };
 
 type Patterns = Record<string, string | string[]>;
