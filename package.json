@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-expect-extensions",
   "version": "0.0.0-development",
-  "description": "Scaffolded with @skarab/skaffold",
+  "description": "Enforce the use of specific file extensions.",
   "author": {
     "name": "skarab42",
     "email": "skarab@bluewin.ch"
@@ -15,14 +15,14 @@
   "funding": "https://github.com/sponsors/skarab42",
   "license": "MIT",
   "type": "module",
-  "exports": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "exports": "./plugin/index.js",
+  "types": "./plugin/index.d.ts",
   "private": true,
   "publishConfig": {
     "access": "restricted"
   },
   "files": [
-    "lib"
+    "plugin"
   ],
   "scripts": {
     "build": "tsc -p ./tsconfig.build.json",
@@ -35,19 +35,19 @@
     "release": "semantic-release --branches main"
   },
   "devDependencies": {
-    "@skarab/eslint-config": "^2.0.0",
+    "@skarab/eslint-config": "^3.0.0",
     "@skarab/prettier-config": "^1.2.2",
-    "@skarab/typescript-config": "^1.3.1",
-    "@types/node": "^18.7.18",
-    "@vitest/coverage-c8": "^0.23.4",
-    "eslint": "^8.23.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
+    "@skarab/typescript-config": "^2.0.0",
+    "@types/node": "^18.11.9",
+    "@vitest/coverage-c8": "^0.25.3",
+    "eslint": "^8.28.0",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0",
     "semantic-release": "^19.0.5",
-    "simple-git-hooks": "^2.8.0",
-    "typescript": "^4.8.3",
+    "simple-git-hooks": "^2.8.1",
+    "typescript": "^4.9.3",
     "vite-plugin-vitest-typescript-assert": "^1.1.4",
-    "vitest": "^0.23.4"
+    "vitest": "^0.25.3"
   },
   "engines": {
     "node": ">=16",
