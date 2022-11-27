@@ -25,6 +25,11 @@ test(
         filename: 'source/index.js',
         options: [{ './source/**': ['**/*.js'] }],
       },
+      {
+        code: '',
+        filename: 'index.js',
+        options: [{ './source/**': ['**/*.js'] }],
+      },
     ],
     invalid: [
       {

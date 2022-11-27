@@ -18,6 +18,7 @@ const meta: Rule.RuleModule['meta'] = {
   schema: [
     {
       type: 'object',
+      minProperties: 1,
       patternProperties: {
         '': {
           anyOf: [{ type: 'string' }, { type: 'array', items: { type: 'string' } }],
